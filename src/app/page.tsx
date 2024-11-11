@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
 import {
   DesktopOutlined,
   FileOutlined,
@@ -8,8 +8,9 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Button, Layout, Menu, theme } from 'antd';
 import Teampage from './(pages)/team/page';
+import ButtonComponent from '@/components/button/button';
 
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -61,9 +62,9 @@ const App: React.FC = () => {
       case '1':
         return <div><Teampage/></div>;
       case '2':
-        return <div>Content for Option 2</div>;
+        return <div> { Date()}</div>;
       case '3':
-        return <div>Content for Tom</div>;
+        return <div><ButtonComponent/></div>;
       case '4':
         return <div>Content for Bill</div>;
       case '5':
